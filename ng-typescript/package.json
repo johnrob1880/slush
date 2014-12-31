@@ -1,0 +1,26 @@
+{
+  "name": "slush-ng-typescript",
+  "version": "0.0.1",
+  "description": "AngularJs Typescript",
+  "main": "slushfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [
+    "slushgenerator"
+  ],
+  "dependencies": {
+    "slush": ">=1.0.0",
+    "gulp": "^3.6.2",
+    "gulp-template": "^0.1.1",
+    "gulp-install": "^0.1.4",
+    "gulp-conflict": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-concat": "^2.4.2",
+    "underscore.string": "^2.3.3",
+    "inquirer": "^0.4.1",
+    "iniparser": "^1.0.5"
+  }
+}

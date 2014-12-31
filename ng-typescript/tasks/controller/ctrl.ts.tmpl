@@ -1,0 +1,14 @@
+/// <reference path="../_all.ts" />
+module <%=appName %> {
+    export interface I<%= name %>CtrlScope extends ng.IScope {
+        message: string
+    }
+
+    export class <%= name %>Ctrl {
+        static $inject = ['$scope'];
+
+        constructor($scope: I<%=name%>CtrlScope) {
+            $scope.message = "Hello World!";
+        }
+    }
+}
