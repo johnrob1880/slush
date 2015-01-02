@@ -1,0 +1,18 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "angularjs/angular.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular-sanitize.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular-mocks.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    }
+  }
+}

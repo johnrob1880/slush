@@ -1,0 +1,16 @@
+/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="app.core.module.ts" />
+/// <reference path="blocks/blocks.module.ts" />
+/// <reference path="foobars/foobars.module.ts" />
+/// <reference path="services/services.module.ts" />
+/// <reference path="widgets/widgets.module.ts" />
+/// <reference path="app.module.ts" />
+/// <reference path="app.config.ts" />
+/// <reference path="app.run.ts" />
+/// <reference path="app.values.ts" />
+/// <reference path="blocks/apiendpoint.config.ts"/>
+/// <reference path="blocks/apiendpoint.provider.ts"/>
+/// <reference path="foobars/foobars.routes.ts" />
+/// <reference path="foobars/foobars.controller.ts" />
+/// <reference path="foobars/foobars.run.ts" />
+/// <reference path="services/foobars.service.ts" />
