@@ -13,7 +13,7 @@
             $locationProvider.html5Mode(true);
 
             $routeProvider.when("/", {
-                template: "<div>App Home</div>"
-            });
+                template: "<div><a href='#/foobars'>Foobars</a></div>"
+            }).otherwise("/");
     }
 })();

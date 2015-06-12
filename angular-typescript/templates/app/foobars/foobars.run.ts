@@ -18,5 +18,8 @@
             {name: 'Foobar3'},
         ];
         $httpBackend.whenGET(apiEndpoint.baseUrl + "/foobars").respond(foobars);
+
+        $httpBackend.whenGET(/views\/.*/).passThrough();
+
     }
 })();

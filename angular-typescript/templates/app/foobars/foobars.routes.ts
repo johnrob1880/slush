@@ -13,7 +13,7 @@
         $locationProvider:ng.ILocationProvider): void {
 
         $routeProvider.when('/foobars', {
-            templateUrl: 'foobars/foobars.html',
+            templateUrl: 'views/foobars/foobars.html',
             controller: 'app.foobars.FoobarController',
             controllerAs: "vm",
             resolve: {

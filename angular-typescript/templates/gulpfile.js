@@ -7,7 +7,8 @@ var gulp = require("gulp"),
     karma = require("karma").server,
     open = require("open"),
     port = 5000,
-    testServerPort = 8081;
+    testServerPort = 8081,
+    historyApiFallback = require("connect-history-api-fallback");
 
 gulp.task("compile", compile);
 
@@ -69,7 +70,10 @@ gulp.task("connect", function () {
     connect.server({
         root: "./dist",
         port: port,
-        livereload: true
+        livereload: true,
+        middleware: function(connect, opt) {
+            return [ historyApiFallback ];
+        }
     });
 });
 
