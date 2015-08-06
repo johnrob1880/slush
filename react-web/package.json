@@ -1,0 +1,43 @@
+{
+    "name": "slush-react-web",
+    "description": "A slush generator for react web applications.",
+    "version": "0.1.0",
+    "homepage": "https://github.com/johnrob1880/slush-react-web",
+    "author": {
+        "name": "John Robinson",
+        "email": "johnrob1880@alliancecom.net"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/johnrob1880/slush-react-web.git"
+    },
+    "bugs": {
+        "url": "https://github.com/johnrob1880/slush-react-web/issues"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/johnrob1880/slush-react-web/blob/master/LICENSE"
+    }],
+    "main": "slushfile.js",
+    "engines": {
+        "node": ">= 0.10.26",
+        "npm": ">=1.4.3"
+    },
+    "scripts": {
+        "test": "echo \"No tests\""
+    },
+    "dependencies": {
+        "slush": ">=1.0.0",
+        "gulp": "^3.6.2",
+        "gulp-template": "^0.1.1",
+        "gulp-install": "^0.1.4",
+        "gulp-conflict": "^0.1.1",
+        "gulp-rename": "^1.2.0",
+        "underscore.string": "^2.3.3",
+        "inquirer": "^0.8.0",
+        "iniparser": "^1.0.5"
+    },
+    "keywords": [
+        "slushgenerator"
+    ]
+}

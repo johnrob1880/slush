@@ -25,3 +25,4 @@ var gulp = require('gulp'),
 // load generators
 gulp = require('./generators/wp')(gulp, install, conflict, template, rename, _, git, inquirer, defaults, Spinner, mkdirp, del);
 gulp = require('./generators/theme')(gulp, install, conflict, template, rename, _, git, inquirer, defaults, Spinner, mkdirp, del);
+gulp = require('./generators/server')(gulp, install, conflict, template, rename, _, git, inquirer, defaults, Spinner, mkdirp, del);

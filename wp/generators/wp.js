@@ -60,23 +60,29 @@ module.exports = function(gulp, install, conflict, template, rename, _, git, inq
                         console.error('Unable to clone wordpress repository!');
                     }
 
-                    del(['./WordPress/wp-content/themes/**/*', '!./WordPress/wp-content/themes/twentyfifteen/*.*'], function (err) {
-                       return done();
+                    del([
+                        'WordPress/wp-content/themes/twentyeleven',
+                        'WordPress/wp-content/themes/twentytwelve',
+                        'WordPress/wp-content/themes/twentythirteen',
+                        'WordPress/wp-content/themes/twentyten',
+                        'WordPress/wp-content/themes/twentyfourteen'
+                      ], function (err) {
+                        return done();
                     });
 
-                    //gulp.src(__dirname + '/templates/**')
-                    //    .pipe(template(answers))
-                    //    .pipe(rename(function (file) {
-                    //        if (file.basename[0] === '_') {
-                    //            file.basename = '.' + file.basename.slice(1);
-                    //        }
-                    //    }))
-                    //    .pipe(conflict('./'))
-                    //    .pipe(gulp.dest('./'))
-                    //    .pipe(install())
-                    //    .on('end', function () {
-                    //        done();
-                    //    });
+                    gulp.src(__dirname + '/../templates/**/*.*')
+                       .pipe(template(answers))
+                       .pipe(rename(function (file) {
+                           if (file.basename[0] === '_') {
+                               file.basename = '.' + file.basename.slice(1);
+                           }
+                       }))
+                       .pipe(conflict('./'))
+                       .pipe(gulp.dest('./'))
+                       .pipe(install())
+                       .on('end', function () {
+                           done();
+                       });
                 });
             });
     });
